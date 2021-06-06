@@ -1,0 +1,341 @@
+[ec2-user@ip-172-31-84-9 abcpro]$ history
+    1  git
+    2  sudo yum install git -y
+    3  git
+    4  git clone https://github.com/devopsjune2021/abcpro.git
+    5  ls -ltr
+    6  cd abcpro/
+    7  ls -la
+    8  ls -ltr
+    9  ls -la
+   10  ls -ltr
+   11  touch a.java
+   12  ls -ltr
+   13  git add a.java 
+   14  git status
+   15  git commit -m "created a new file"
+   16  git config --global --edit
+   17  git commit --amend --reset-author
+   18  git log
+   19  git push -u origin master
+   20  ls -ltr
+   21  touch b.java
+   22  vi a.java 
+   23  git status
+   24  git add .
+   25  git status
+   26  git commit -m "files updated"
+   27  git log
+   28  git push
+   29  touch f1 f2 f3 a.txt b.txt
+   30  ls -ltr
+   31  git status
+   32  git add *.txt
+   33  git status
+   34  git add .
+   35  git commit -m "updated"
+   36  git push
+   37  git pull
+   38  git log
+   39  ls -ltr
+   40  cd abcpro/
+   41  ls -ltr
+   42  pwd
+   43  cd ../
+   44  pwd
+   45  ls -ltr
+   46  cat abcpro/.git/config 
+   47  rm -rf abcpro/
+   48  ssh-keygen
+   49  ls -ltr ~/.ssh/
+   50  cat ~/.ssh/id_rsa.pub 
+   51  ls -ltr
+   52  git clone git@github.com:devopsjune2021/abcpro.git
+   53  ls -ltr
+   54  cd abcpro/
+   55  cat .git/config 
+   56  cd ../
+   57  ls -ltr
+   58  mkdir project1
+   59  cd project1/
+   60  ls -ltr
+   61  ls -la
+   62  git init
+   63  ls -la
+   64  touch f1
+   65  git add f1
+   66  git commit -m "f1 created"
+   67  git log
+   68  cat .git/config 
+   69  git remote add origin git@github.com:devopsjune2021/project1.git
+   70  cat .git/config 
+   71  git push -u origin master 
+   72  cd ../abcpro/
+   73  ls-ltr
+   74  ls -ltr
+   75  git branch
+   76  git branch -r
+   77  cat .git/config 
+   78  git branch -r
+   79  git branch 
+   80  git branch -a
+   81  git pull
+   82  git branch 
+   83  git branch -r
+   84  git checkout bug100
+   85  git branch -a
+   86  ls -ltr
+   87  vi b.java 
+   88  git sttaus
+   89  git status
+   90  git add b.java 
+   91  git commit -m "bug100 fixed"
+   92  cat .git/config 
+   93  git push
+   94  ls -ltr
+   95  git branch
+   96  git pull
+   97  git checkout master
+   98  git pull
+   99  git branch
+  100  git branch -a
+  101  git checkout enc1
+  102  git branch -a
+  103  mkdir dir1
+  104  touch  dir1/f{1..5}
+  105  ls -ltr dir1/
+  106  git add dir1/f1
+  107  git commit -m "day 1"
+  108  git add dir1/f2
+  109  git commit -m "day 2"
+  110  git add dir1/f3
+  111  git commit -m "day 3"
+  112  git add dir1/f4
+  113  git commit -m "day 4"
+  114  git add dir1/f5
+  115  git commit -m "day 5"
+  116  git log
+  117  git push
+  118  git branch -a
+  119  git pull
+  120  git chekcout master
+  121  git checkout master
+  122  ls -latr
+  123  ls -ltr
+  124  git branch -a
+  125  git pull
+  126  git branch -a
+  127  ls -ltr
+  128  git branch -a
+  129  git pull
+  130  git branch bug101
+  131  git pull
+  132  git branch -a
+  133  git checkout bug101
+  134  git branch -a
+  135  ls -ltr
+  136  vi f3
+  137  git add .
+  138  git commit -m "f3 updated"
+  139  git push
+  140  cat .git/config 
+  141  git push -u origin bug101
+  142  cat .git/config 
+  143  git branch -a
+  144  git checkout master 
+  145  git branch -a
+  146  git merge bug101
+  147  git push
+  148  git branch -a
+  149  git checkout -b bug102
+  150  git branch -a
+  151  git pull
+  152  cd abcpro/
+  153  ls -ltr
+  154  git branch -a
+  155  git checkout master
+  156  git pull
+  157  git tag 
+  158  git branch -a
+  159  git tag -a v2 -m "Abcpro v2 release"
+  160  git tag 
+  161  git push -u origin v2
+  162  git pull
+  163  git checkout -n bug103
+  164  git checkout -b bug103
+  165  git branch -a
+  166  ls -ltr
+  167  touch f4
+  168  ls -lrt
+  169  vi a.txt 
+  170  git status
+  171  git add .
+  172  git status
+  173  git checkout master 
+  174  cat a.txt 
+  175  git checkout bug103
+  176  git stash list
+  177  git stash 
+  178  git stash list
+  179  git checkout master 
+  180  git checkout -b bug104 
+  181  ls -ltr
+  182  vi f2
+  183  git ad .
+  184  git add .
+  185  git commit -m "bug104 fixed"
+  186  git push -u origin bug104
+  187  git chekcout master
+  188  git checkout master
+  189  git merge bug104
+  190  git push
+  191  git checkout bug103
+  192  git stash list
+  193  git stash apply stash@{0}
+  194  git status
+  195  ls -ltr
+  196  vi f3
+  197  git add .
+  198  git commit -m "bug103 fixed"
+  199  git push -u origin bug103
+  200  git stash list
+  201  git stash clean
+  202  git stash clear
+  203  git stash list
+  204  touch f10
+  205  git add .
+  206  git stash
+  207  git stash list
+  208  git stash drop stash@{0}
+  209  git stash list
+  210  git branch -a
+  211  git checkout master
+  212  git pull
+  213  git branch --help
+  214  !
+  215  git branch -a
+  216  git pull
+  217  cd ../
+  218  git clone git@github.com:devopsjune2021/project2.git
+  219  cd project2/
+  220  git log
+  221  touch a1 a2 a3 
+  222  git add a1
+  223  git commit -m "a1"
+  224  git add a2
+  225  git commit -m "a2"
+  226  git add a3
+  227  git commit -m "a3"
+  228  git log
+  229  git branch -a
+  230  git checkout -b bug100
+  231  git push -u origin bug100
+  232  touch a4 a5 a6 
+  233  git add a4
+  234  git commit -m "a4"
+  235  git add a5
+  236  git commit -m "a5"
+  237  git add a6
+  238  git commit -m "a6"
+  239  git log
+  240  git push
+  241  git chekcout master
+  242  git checkout master
+  243  git checkout main
+  244  git checkout -b bug101
+  245  git log
+  246  touch b1 b2
+  247  git add b1
+  248  git commit -m "b1"
+  249  git add b2
+  250  git commit -m "b3"
+  251  git push -u origin bug101
+  252  git checkout main
+  253  git pull
+  254  git merge bug101
+  255  git push
+  256  git log
+  257  git checkout bug100
+  258  git log
+  259  !
+  260  git rebase master
+  261  git rebase main
+  262  git log
+  263  !
+  264  ls -ltr
+  265  git branch -a
+  266  git chekcout master 
+  267  git chekcout main
+  268  git checkout main
+  269  git merge bug100
+  270  ls -ltr
+  271  git push
+  272  cd ../
+  273  cd abcpro/
+  274  ls -ltr
+  275  git branch -a
+  276  git pull
+  277  git checkout -b enc2
+  278  mkdir dir2
+  279  ls -ltr
+  280  touch dir2/f{1..9}
+  281  git add dir2/f1
+  282  git commit -m "f1"
+  283  git add dir2/f2
+  284  git commit -m "f2"
+  285  git add dir2/f3
+  286  git commit -m "f3"
+  287  git add dir2/f4
+  288  git commit -m "f"
+  289  git add dir2/f5
+  290  git commit -m "f5"
+  291  git add dir2/f6
+  292  git commit -m "f6"
+  293  git add dir2/f7
+  294  git commit -m "f7"
+  295  git commit -m "f8"
+  296  git add dir2/f8
+  297  git commit -m "f8"
+  298  git add dir2/f9
+  299  git commit -m "f9"
+  300  git stauts
+  301  git status
+  302  git push -u origin enc2
+  303  git chekcout master 
+  304  git checkout master 
+  305  gi tpull
+  306  git pull
+  307  ls -ltr
+  308  git checkout -b bug10
+  309  touch f6 f7
+  310  git add f6
+  311  git commit -m ""f6
+  312  git add f7
+  313  git commit -m "f7"
+  314  git status
+  315  git push -u origin bug10
+  316  git checkout master 
+  317  git merge --squash bug10 
+  318  ls -ltr
+  319  git status
+  320  git commit -m "bug10 fixed"
+  321  git push
+  322  git log
+  323  git pull
+  324  ls -ltr
+  325  git branch -a
+  326  git branch bug105
+  327  git branch bug106
+  328  git checkout bug105
+  329  ls -ltr
+  330  vi f6
+  331  git add .
+  332  git commit -m "bug105"
+  333  git push -u origin bug105
+  334  git checkout bug106 
+  335  ls -ltr
+  336  vi f6
+  337  git add .
+  338  git commit -m "bug106"
+  339  git push -u origin bug106
+  340  history
