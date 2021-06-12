@@ -1,0 +1,93 @@
+ubuntu@ip-172-31-28-40:~$ history 
+    1  sudo apt update
+    2  sudo apt-get install docker 
+    3  sudo systemctl status docker
+    4  sudo systemctl status docker-engine
+    5  curl -fsSL https://get.docker.com -o get-docker.sh
+    6  ls -ltr
+    7  sh get-docker.sh
+    8  sudo systemctl status docker 
+    9  sudo systemctl enable docker 
+   10  docker ps
+   11  sudo su - 
+   12  id
+   13  sudo usermod -aG docker ubuntu
+   14  exit
+   15  docker ps
+   16  sudo cat /etc/group
+   17  docker ps
+   18  docker ps -a
+   19  docker images
+   20  docker pull centos
+   21  docker pull centos:7
+   22  docker images
+   23  docker pull centos:8
+   24  docker images
+   25  docker run centos:8 ls -ltr /
+   26  docker ps
+   27  docker ps -a
+   28  docker inspect d5593a2c06ff
+   29  docker inspect d5593a2c06ff | less
+   30  docker ps -a
+   31  docker inspect d5593a2c06ff | less
+   32  docker run -it centos:8 bash
+   33  docker ps 
+   34  docker ps -a
+   35  docker run -it centos:8 bash
+   36  docker ps 
+   37  docker ps -a
+   38  docker exec -it a80dd6aef3a5 bash
+   39  docker ps 
+   40  docker kill a80dd6aef3a5
+   41  docker ps 
+   42  docker ps -a
+   43  docker rm a80dd6aef3a5
+   44  docker ps -a
+   45  docker rm b43a06f49480 d5593a2c06ff
+   46  docker ps -a
+   47  docker run -it --rm centos:8 bash
+   48  docker ps
+   49  docker kill eb52866d1bd2
+   50  docker ps -a
+   51  tail -f /dev/null 
+   52  docker run -d centos:7 tail -f /dev/null
+   53  docker ps
+   54  echo hi
+   55  echo hi > /tmp/anu
+   56  cat /tmp/an
+   57  echo hi > /dev/null
+   58  cat /dev/null
+   59  tail -f /dev/null
+   60  docker run -d training/webapp python app.py
+   61  docker ps 
+   62  docker exec -it 850b6406a107 bash
+   63  docker ps 
+   64  docker kill 850b6406a107
+   65  docker rm 850b6406a107
+   66  docker run -d --rm -p 8080:5000  training/webapp python app.py
+   67  docker ps 
+   68  netstat -ntlp
+   69  docker exec -it 3f67b1710979 bash
+   70  docker ps
+   71  docker kill 3f67b1710979
+   72  docker ps -a
+   73  docker volume list 
+   74  docker create -v /opt --name myappdata centos
+   75  docker ps
+   76  docker volumes
+   77  docker volume list
+   78  docker ps -a
+   79  docker run -d --rm --volume-from myappdata centos:7 tail -f /dev/null
+   80  docker run -d --rm --volumes-from myappdata centos:7 tail -f /dev/null
+   81  docker ps
+   82  docker exec -it e37c14cabd7a bash
+   83  docker ps
+   84  docker kill e37c14cabd7a
+   85  docker ps -a
+   86  docker run -d --rm --volumes-from myappdata centos:7 tail -f /dev/null
+   87  docker ps
+   88  docker exec -it 836672b365c0 bash
+   89  df -hT
+   90  ls -ltr /opt/
+   91  mount -l
+   92  history 
